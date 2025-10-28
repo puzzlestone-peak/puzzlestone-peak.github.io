@@ -1,0 +1,1 @@
+const t={PUZZLES:"/puzzles",PUZZLE:"/puzzle",EXPEDITIONS:"/expeditions",EXPEDITION:"/expedition"};function n(e){return`${t.PUZZLE}/${e}`}function u(e){return`${t.PUZZLES}/${e}`}function o(e){return`${t.EXPEDITION}/${e}`}export{t as R,n as a,o as b,u as g};

@@ -1,0 +1,1 @@
+import"./chunk-OIYGIGL5-B3h4I76-.js";import{b as a}from"./Button-BGSe_H6B.js";function s(e,o="",r){return()=>a(e,o,r)}const l=s("darkmode",!1,{serializer:e=>e?"1":"0",deserializer:e=>e==="1"});export{l as u};
