@@ -1,0 +1,1 @@
+import{t as e}from"./index-BdwX92X6.js";import{c as d}from"./createLucideIcon-DsSOLlez.js";function a({children:r,className:o}){return e.jsx("div",{className:d("bg-card rounded-xl border border-border overflow-hidden",o),children:r})}export{a as C};
