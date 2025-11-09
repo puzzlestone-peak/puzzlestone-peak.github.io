@@ -1,1 +1,0 @@
-import{t as e}from"./index-DIth0oIc.js";import{c as d}from"./card-CRYRt8Xe.js";function a({children:r,className:o}){return e.jsx("div",{className:d("bg-card rounded-xl border border-border overflow-hidden",o),children:r})}export{a as C};
