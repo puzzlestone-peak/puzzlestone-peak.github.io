@@ -1,0 +1,7 @@
+const e={slug:"wine-and-water",metadata:{id:"puzzle-draft-74",title:"Wine and Water",published:!1,difficulty:"hard",dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"You have two thermoses. The first contains a liter of wine, the second contains a liter of water. You pour one cup of wine out from the first thermos to the...",websitePreview:"You have two thermoses. The first contains a liter of wine, the second contains a liter of water. You pour one cup of wine out from the first thermos to the..."},content:`
+
+<p>You have two thermoses. The first contains a liter of wine, the second contains a liter of water. You pour one cup of wine out from the first thermos to the second one. Then, after mixing that, you take one cup of the mixture from the second thermos, and pour it back into the first thermos. After completing these two operations, which thermos is more pure?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
+<!-- Tags: \\[todo\\] -->
+
+You have two thermoses. The first contains a liter of wine, the second contains a liter of water. You pour one cup of wine out from the first thermos to the second one. Then, after mixing that, you take one cup of the mixture from the second thermos, and pour it back into the first thermos. After completing these two operations, which thermos is more pure?
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

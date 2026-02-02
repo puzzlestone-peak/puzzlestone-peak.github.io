@@ -1,0 +1,9 @@
+const e={slug:"nighttime-bridge-crossing",metadata:{id:"puzzle-draft-78",title:"Nighttime Bridge Crossing",published:!1,difficulty:"easy",dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"Four people, A, B, C, and D, are on one side of a bridge, and they all want to cross the bridge. However, it's late at night, so you can't cross without a...",websitePreview:"Four people, A, B, C, and D, are on one side of a bridge, and they all want to cross the bridge. However, it's late at night, so you can't cross without a..."},content:`
+
+
+<p>Four people, A, B, C, and D, are on one side of a bridge, and they all want to cross the bridge. However, it's late at night, so you can't cross without a flashlight. They only have one flashlight. Also, the bridge is only strong enough to support the weight of two people at once. The four people all walk at different speeds: A takes 1 minute to cross the bridge, B takes 2 minutes, C takes 5 minutes, and D takes 10 minutes. When two people cross together, sharing the flashlight, they walk at the slower person's rate. How quickly can the four cross the bridge?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
+<!-- Tags: \\[todo\\] -->
+<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml) -->
+
+Four people, A, B, C, and D, are on one side of a bridge, and they all want to cross the bridge. However, it's late at night, so you can't cross without a flashlight. They only have one flashlight. Also, the bridge is only strong enough to support the weight of two people at once. The four people all walk at different speeds: A takes 1 minute to cross the bridge, B takes 2 minutes, C takes 5 minutes, and D takes 10 minutes. When two people cross together, sharing the flashlight, they walk at the slower person's rate. How quickly can the four cross the bridge?
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

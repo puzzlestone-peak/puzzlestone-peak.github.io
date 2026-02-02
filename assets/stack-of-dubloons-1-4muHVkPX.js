@@ -1,0 +1,15 @@
+const e={slug:"stack-of-dubloons-1",metadata:{id:"puzzle-draft-208",title:"Stack of Dubloons \\[1\\]",published:!1,difficulty:"easy",dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"You and a friend stumble on a pirate’s treasure: an old chest filled with coins: 99 copper coins and 1 gold coin. These old coins are no longer legal tender,...",websitePreview:"You and a friend stumble on a pirate’s treasure: an old chest filled with coins: 99 copper coins and 1 gold coin. These old coins are no longer legal tender,..."},content:`<p>You and a friend stumble on a pirate’s treasure: an old chest filled with coins: 99 copper coins and 1 gold coin. These old coins are no longer legal tender, so the copper ones are worthless. Only the gold coin is worth something due to its material.</p>
+<p>To determine who gets the gold coin, your friend comes up with a game of wits. He stacks the 100 coins in a tall stack with the gold coin at the bottom. You and him will take turns taking anywhere between 1 to 10 coins from the top of the stack, all the way until the final coin is taken. He lets you decide if you want to go first or second.</p>
+<h3 class="markdown-h2">Should you go first or second? And what strategy do you use to ensure you’ll win the gold coin?</h3>
+<p>Choose to go first and take 1 coin. After that, when your friend makes a move, take 11 - [the number of coins he took].</p>
+<p>By taking the first coin, you bring the stack down to 99 coins: a multiple of 11. Whenever your friend takes 1 to 10 coins, you can always take 11 -[the number of coins he took] to bring the stack down to the next lower multiple of 11. This continues until the stack is 11 coins high. He can take between 1 to 10 coins, and you’ll take the remaining coins, including the gold coin.</p>`,rawContent:`You and a friend stumble on a pirate’s treasure: an old chest filled with coins: 99 copper coins and 1 gold coin. These old coins are no longer legal tender, so the copper ones are worthless. Only the gold coin is worth something due to its material.
+
+To determine who gets the gold coin, your friend comes up with a game of wits. He stacks the 100 coins in a tall stack with the gold coin at the bottom. You and him will take turns taking anywhere between 1 to 10 coins from the top of the stack, all the way until the final coin is taken. He lets you decide if you want to go first or second.
+
+Should you go first or second? And what strategy do you use to ensure you’ll win the gold coin?
+---
+
+Choose to go first and take 1 coin. After that, when your friend makes a move, take 11 - \\[the number of coins he took\\].
+
+By taking the first coin, you bring the stack down to 99 coins: a multiple of 11. Whenever your friend takes 1 to 10 coins, you can always take 11 -\\[the number of coins he took\\] to bring the stack down to the next lower multiple of 11. This continues until the stack is 11 coins high. He can take between 1 to 10 coins, and you’ll take the remaining coins, including the gold coin.
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

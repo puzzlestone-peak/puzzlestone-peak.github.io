@@ -1,0 +1,13 @@
+const e={slug:"27-cubes",metadata:{id:"puzzle-25",title:"27 Cubes",difficulty:"easy",concepts:["optimisation"],tags:["has-solution"],credit:"Classic optimisation puzzle. Question and solution written by Puzzlestone Peak.",dateCreated:"2025-11-02",lastUpdated:"2025-11-02",changelog:"2025-11-03: Added to Puzzlestone Peak",preview:"A 9cm cube is to be cut into 27 smaller cubes, each of side length 3cm. This can be done with 6 straight cuts to the original cube: 2 parallel cuts along each...",websitePreview:"A 9cm cube is to be cut into 27 smaller cubes, each of side length 3cm. This can be done with 6 straight cuts to the original cube: 2 parallel cuts along each..."},content:`<p>A 9cm cube is to be cut into 27 smaller cubes, each of side length 3cm. This can be done with 6 straight cuts to the original cube: 2 parallel cuts along each of the 3 axes. This is the optimal solution provided we can cut through multiple pieces at once, but we’re not allowed to rearrange the pieces in between each cut.</p>
+<p>Assuming that you can now rearrange the pieces however you’d like after each cut, what is the minimum number of straight cuts required to obtain the 27 smaller cubes? Prove your answer.</p>
+<details class="content-block solution-block" data-type="solution"><summary class="solution-label">Solution</summary><div class="solution-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p>The minimum number of cuts you can do is still 6.</p><p>Consider the 3cm cube in the middle of the big cube. Each of its 6 sides requires a cut to expose it. Since one straight cut cannot expose more than 1 side of this cube, we need at least 6 cuts to expose it. Since we already have a solution with 6 cuts, this is the best we can do.</p></div></details>`,rawContent:`
+A 9cm cube is to be cut into 27 smaller cubes, each of side length 3cm. This can be done with 6 straight cuts to the original cube: 2 parallel cuts along each of the 3 axes. This is the optimal solution provided we can cut through multiple pieces at once, but we’re not allowed to rearrange the pieces in between each cut.
+
+Assuming that you can now rearrange the pieces however you’d like after each cut, what is the minimum number of straight cuts required to obtain the 27 smaller cubes? Prove your answer.
+
+:::solution
+The minimum number of cuts you can do is still 6.
+
+Consider the 3cm cube in the middle of the big cube. Each of its 6 sides requires a cut to expose it. Since one straight cut cannot expose more than 1 side of this cube, we need at least 6 cuts to expose it. Since we already have a solution with 6 cuts, this is the best we can do.
+:::
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};
