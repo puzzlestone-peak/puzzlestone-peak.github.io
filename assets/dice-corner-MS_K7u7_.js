@@ -1,19 +1,39 @@
 const e={slug:"dice-corner",metadata:{id:"puzzle-39",title:"Dice Corner",questionPreview:`You’re looking through a hole at the corner of a die. Can you identify at least one of the visible faces?
-`,difficulty:"easy",concepts:["logic"],tags:["has-solution"],dateCreated:"2026-02-02",lastUpdated:"2026-02-02",credit:`Puzzle found on Wu Riddles.
+`,difficulty:"easy",concepts:["logic"],tags:["has-solution","starter"],dateCreated:"2026-02-02",lastUpdated:"2026-02-02",credit:`Puzzle found on Wu Riddles.
 Question and solution written by Puzzlestone Peak.
-`,preview:"You’re looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the...",websitePreview:"You’re looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the..."},content:`<p>You’re looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the corner.</p>
-<div class="dynamic-block-placeholder" data-dynamic-block-id="0" data-mode="dom"><p class="text-muted-foreground text-sm">[Interactive content: dom mode]</p></div>
-<p>Can you identify at least one of the three visible faces?</p>
+`,preview:"You're looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the...",websitePreview:"You're looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the..."},content:`<p>You're looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the corner.</p>
+<div class="dynamic-block-placeholder" data-dynamic-block-id="0" data-mode="component"><p class="text-muted-foreground text-sm">[Interactive content: component mode]</p></div>
+<p>What number appears on one of these three visible faces? You do not have to identify the exact face it is on.</p>
 <details class="content-block hint-block" data-type="hint"><summary class="hint-label">A property about dice</summary><div class="hint-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p>On a standard die, opposite faces sum to 7. At any corner, the three visible faces include one from each opposite pair: (1, 6), (2, 5), and (3, 4).</p></div></details>
-<details class="content-block solution-block" data-type="solution"><summary class="solution-label">Solution</summary><div class="solution-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p><strong>6.</strong></p><p>On a standard die, opposite faces sum to 7: the pairs are (1, 6), (2, 5), and (3, 4). At any corner, the three visible faces include exactly one face from each pair.</p><p>The 1 has a single pip in the centre of the face — far from any corner. If the 1 were visible, its corner would show no pips through the hole. But all three corners show a pip.</p><p>Since the (1, 6) pair must contribute one face, and it can’t be the 1, the visible face must be the <strong>6</strong>.</p></div></details>`,rawContent:`
-You’re looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the corner.
+<details class="content-block solution-block" data-type="solution"><summary class="solution-label">Solution</summary><div class="solution-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p><strong>6.</strong></p><p>On a standard die, opposite faces sum to 7: the pairs are (1, 6), (2, 5), and (3, 4). At any corner, the three visible faces include exactly one face from each pair.</p><p>The 1 has a single pip in the centre of the face — far from any corner. If the 1 were visible, its corner would show no pips through the hole. But all three corners show a pip.</p><p>Since the (1, 6) pair must contribute one face, and it can't be the 1, the visible face must be the <strong>6</strong>.</p></div></details>
+<div class="inline-component-definition" style="display: none;"></div>`,rawContent:`
+You're looking through a hole at the corner of a standard die. The image below shows all you can see through the hole: portions of three faces meeting at the corner.
 
 :::dynamic
 \`\`\`yaml
 title: Die corner view
-ariaLabel: Looking through a circular hole at the corner of a die, showing portions of three faces each with one pip visible
+use: '#die-corner-diagram'
 \`\`\`
+:::
 
+What number appears on one of these three visible faces? You do not have to identify the exact face it is on.
+
+:::hint[A property about dice]
+On a standard die, opposite faces sum to 7. At any corner, the three visible faces include one from each opposite pair: (1, 6), (2, 5), and (3, 4).
+:::
+
+:::solution
+**6.**
+
+On a standard die, opposite faces sum to 7: the pairs are (1, 6), (2, 5), and (3, 4). At any corner, the three visible faces include exactly one face from each pair.
+
+The 1 has a single pip in the centre of the face — far from any corner. If the 1 were visible, its corner would show no pips through the hole. But all three corners show a pip.
+
+Since the (1, 6) pair must contribute one face, and it can't be the 1, the visible face must be the **6**.
+:::
+
+
+:::component[die-corner-diagram]
 \`\`\`js
 function draw(options) {
   const { canvas, api, width: containerWidth } = options;
@@ -156,23 +176,7 @@ function draw(options) {
 }
 \`\`\`
 :::
-
-Can you identify at least one of the three visible faces?
-
-:::hint[A property about dice]
-On a standard die, opposite faces sum to 7. At any corner, the three visible faces include one from each opposite pair: (1, 6), (2, 5), and (3, 4).
-:::
-
-:::solution
-**6.**
-
-On a standard die, opposite faces sum to 7: the pairs are (1, 6), (2, 5), and (3, 4). At any corner, the three visible faces include exactly one face from each pair.
-
-The 1 has a single pip in the centre of the face — far from any corner. If the 1 were visible, its corner would show no pips through the hole. But all three corners show a pip.
-
-Since the (1, 6) pair must contribute one face, and it can’t be the 1, the visible face must be the **6**.
-:::
-`,dynamicBlocks:[{type:"dynamic",mode:"dom",code:`function draw(options) {
+`,dynamicBlocks:[{type:"dynamic",mode:"component",componentId:"#die-corner-diagram",title:"Die corner view",sourceFile:"/home/runner/work/puzzlestone-peak/puzzlestone-peak/apps/web/content/puzzles/logic/dice-corner.md"}],inlineComponents:{"die-corner-diagram":{id:"die-corner-diagram",code:`function draw(options) {
   const { canvas, api, width: containerWidth } = options;
   const ctx = canvas.getContext('2d');
 
@@ -310,4 +314,4 @@ Since the (1, 6) pair must contribute one face, and it can’t be the 1, the vis
   ctx.stroke();
 
   ctx.restore();
-}`,title:"Die corner view",sourceFile:"/home/runner/work/puzzlestone-peak/puzzlestone-peak/apps/web/content/puzzles/logic/dice-corner.md",startLine:25}],inlineComponents:{}};export{e as default};
+}`,startLine:44}}};export{e as default};

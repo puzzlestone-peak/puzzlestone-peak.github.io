@@ -1,9 +1,0 @@
-const e={slug:"3-bit-sensors",metadata:{id:"puzzle-draft-164",title:"3-Bit Sensors",published:!1,difficulty:"hard",concepts:[],tags:[],dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",preview:"You have two 3-bit sensors, A and B, that measure the same thing, whatever it is -- temperature of the room, radioactivity levels, whatever. Both sensors are...",websitePreview:"You have two 3-bit sensors, A and B, that measure the same thing, whatever it is -- temperature of the room, radioactivity levels, whatever. Both sensors are..."},content:`
-
-
-<p>You have two 3-bit sensors, A and B, that measure the same thing, whatever it is -- temperature of the room, radioactivity levels, whatever. Both sensors are hooked up to the same CPU, which takes in the sensor readings. You know that the sensors are designed so that their readings can be off by at most one bit. We claim that if B knows that A has sent the CPU a 3-bit sequence, then B only needs to send 2 bits, and the CPU will be able to reconstruct B's 3-bit measurement, thereby conserving bandwidth. How is this so?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
-<!-- Tags: \\[todo\\] -->
-<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml) -->
-
-You have two 3-bit sensors, A and B, that measure the same thing, whatever it is -- temperature of the room, radioactivity levels, whatever. Both sensors are hooked up to the same CPU, which takes in the sensor readings. You know that the sensors are designed so that their readings can be off by at most one bit. We claim that if B knows that A has sent the CPU a 3-bit sequence, then B only needs to send 2 bits, and the CPU will be able to reconstruct B's 3-bit measurement, thereby conserving bandwidth. How is this so?
-`,dynamicBlocks:[],inlineComponents:{}};export{e as default};
