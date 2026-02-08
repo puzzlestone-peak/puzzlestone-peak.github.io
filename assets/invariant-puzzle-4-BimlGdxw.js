@@ -1,9 +1,0 @@
-const e={slug:"invariant-puzzle-4",metadata:{id:"puzzle-draft-309",title:"Invariant Puzzle 4",published:!1,difficulty:"medium",concepts:[],tags:[],dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",preview:"Setup: This is a game between two players. Place 7 black pieces and 8 white pieces in a bag on a table. Players alternate removing two pieces at a time. If...",websitePreview:"Setup: This is a game between two players. Place 7 black pieces and 8 white pieces in a bag on a table. Players alternate removing two pieces at a time. If..."},content:`
-
-
-<p>Setup: This is a game between two players. Place 7 black pieces and 8 white pieces in a bag on a table. Players alternate removing two pieces at a time. If they are both white, return one of the pieces to the bag. If they are of two different colors, the black piece is returned to the bag. If the bag is left with only one black piece, the first player wins. If the bag is left with only one white piece, the second player wins. Idea: The number of black pieces in the bag is always odd. The first player always wins.</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
-<!-- Tags: \\[todo\\] -->
-<!-- Source: [https://pi.math.cornell.edu/~gautam/Invariants.pdf](https://pi.math.cornell.edu/~gautam/Invariants.pdf) -->
-
-Setup: This is a game between two players. Place 7 black pieces and 8 white pieces in a bag on a table. Players alternate removing two pieces at a time. If they are both white, return one of the pieces to the bag. If they are of two different colors, the black piece is returned to the bag. If the bag is left with only one black piece, the first player wins. If the bag is left with only one white piece, the second player wins. Idea: The number of black pieces in the bag is always odd. The first player always wins.
-`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

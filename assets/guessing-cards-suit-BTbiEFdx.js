@@ -1,0 +1,12 @@
+const e={slug:"guessing-cards-suit",metadata:{id:"puzzle-draft-223",title:"Guessing Cards Suit\\[?\\]",published:!1,difficulty:{concepts:"medium",reasoning:"medium"},concepts:[],tags:[],dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",preview:"Contributor: Barukh A magician takes a deck of 36 cards (nine cards of each suit) lying face down. He predicts the suit of the top card, turns it up and puts...",websitePreview:"Contributor: Barukh A magician takes a deck of 36 cards (nine cards of each suit) lying face down. He predicts the suit of the top card, turns it up and puts..."},content:`
+
+
+<p>Contributor: Barukh</p>
+<p>A magician takes a deck of 36 cards (nine cards of each suit) lying face down. He predicts the suit of the top card, turns it up and puts aside. Then he predicts the suit of the second card, turns it up and puts aside, and so on with the entire deck. The deck for the trick was prepared by his secret assistant who knows the order of the cards. He uses the fact that the cards in the deck are slightly non-symmetric, and so the magician can distinguish between two possible orientations of every card. The assistant is not allowed to alter the order of the cards, but he can choose the orientation. What is the best strategy the magician and the assistant should agree upon in order to maximize the number of <em>guaranteed</em> correct predictions?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
+<!-- Tags: \\[todo\\] -->
+<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml) -->
+
+Contributor: Barukh
+
+A magician takes a deck of 36 cards (nine cards of each suit) lying face down. He predicts the suit of the top card, turns it up and puts aside. Then he predicts the suit of the second card, turns it up and puts aside, and so on with the entire deck. The deck for the trick was prepared by his secret assistant who knows the order of the cards. He uses the fact that the cards in the deck are slightly non-symmetric, and so the magician can distinguish between two possible orientations of every card. The assistant is not allowed to alter the order of the cards, but he can choose the orientation. What is the best strategy the magician and the assistant should agree upon in order to maximize the number of *guaranteed* correct predictions?
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

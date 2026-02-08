@@ -1,9 +1,0 @@
-const e={slug:"globe-traversal",metadata:{id:"puzzle-draft-56",title:"Globe Traversal",published:!1,difficulty:"hard",dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"how many places are there on the earth that one could walk one mile south, then one mile west, then one mile north and end up in the same spot? to be precise,...",websitePreview:"how many places are there on the earth that one could walk one mile south, then one mile west, then one mile north and end up in the same spot? to be precise,..."},content:`
-
-
-<p>how many places are there on the earth that one could walk one mile south, then one mile west, then one mile north and end up in the same spot? to be precise, let's assume the earth is a solid smooth sphere, so oceans and mountains and other such things do not exist. you can start at any point on the sphere. also, the rotation of the earth has nothing to do with the solution; you can assume you're walking on a static sphere if that makes the problem less complicated to you.</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
-<!-- Tags: \\[todo\\] -->
-<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml) -->
-
-how many places are there on the earth that one could walk one mile south, then one mile west, then one mile north and end up in the same spot? to be precise, let's assume the earth is a solid smooth sphere, so oceans and mountains and other such things do not exist. you can start at any point on the sphere. also, the rotation of the earth has nothing to do with the solution; you can assume you're walking on a static sphere if that makes the problem less complicated to you.
-`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

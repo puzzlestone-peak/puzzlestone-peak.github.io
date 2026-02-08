@@ -1,9 +1,0 @@
-const o={slug:"three-way-duel",metadata:{id:"puzzle-draft-140",title:"Three-Way Duel",published:!1,difficulty:"medium",dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"you're a cyborg in a pistol duel with two other cyborgs. you have been programmed to fire pistols with an accuracy of 33%. the other two cyborgs shoot with...",websitePreview:"you're a cyborg in a pistol duel with two other cyborgs. you have been programmed to fire pistols with an accuracy of 33%. the other two cyborgs shoot with..."},content:`
-
-
-<p>you're a cyborg in a pistol duel with two other cyborgs. you have been programmed to fire pistols with an accuracy of 33%. the other two cyborgs shoot with accuracies of 100% and 50%, respectively. the rules of the duel are one shot per-cyborg per-round. the shooting order is from worst shooter to best shooter. thus, you go first, the 50% guy goes second, and the 100% guy goes third; repeat. if a cyborg dies, we just skip his or her turn, obviously. what should you shoot at in round 1 to maximize your chances of survival over time?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
-<!-- Tags: \\[todo\\] -->
-<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml) -->
-
-you're a cyborg in a pistol duel with two other cyborgs. you have been programmed to fire pistols with an accuracy of 33%. the other two cyborgs shoot with accuracies of 100% and 50%, respectively. the rules of the duel are one shot per-cyborg per-round. the shooting order is from worst shooter to best shooter. thus, you go first, the 50% guy goes second, and the 100% guy goes third; repeat. if a cyborg dies, we just skip his or her turn, obviously. what should you shoot at in round 1 to maximize your chances of survival over time?
-`,dynamicBlocks:[],inlineComponents:{}};export{o as default};

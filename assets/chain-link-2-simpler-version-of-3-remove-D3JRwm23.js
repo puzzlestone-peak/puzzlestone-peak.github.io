@@ -1,0 +1,9 @@
+const e={slug:"chain-link-2-simpler-version-of-3-remove",metadata:{id:"puzzle-draft-33",title:"Chain Link 2 \\[Simpler version of 3. Remove?\\]",published:!1,difficulty:{concepts:"medium",reasoning:"medium"},dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"a man has a gold chain with 7 links. he needs the service of a laborer for 7 days at a fee of one gold link per day. however, each day of work needs to be paid...",websitePreview:"a man has a gold chain with 7 links. he needs the service of a laborer for 7 days at a fee of one gold link per day. however, each day of work needs to be paid..."},content:`
+
+
+<p>a man has a gold chain with 7 links. he needs the service of a laborer for 7 days at a fee of one gold link per day. however, each day of work needs to be paid for separately. in other words, the worker must be paid each day after working and if the laborer is ever overpaid he will quit with the extra money. also he will never allow himself to be owed a link. what is the fewest number of cuts to the chain to facilitate this arrangement and how does that guarantee payment?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
+<!-- Tags: \\[todo\\] -->
+<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml) -->
+
+a man has a gold chain with 7 links. he needs the service of a laborer for 7 days at a fee of one gold link per day. however, each day of work needs to be paid for separately. in other words, the worker must be paid each day after working and if the laborer is ever overpaid he will quit with the extra money. also he will never allow himself to be owed a link. what is the fewest number of cuts to the chain to facilitate this arrangement and how does that guarantee payment?
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

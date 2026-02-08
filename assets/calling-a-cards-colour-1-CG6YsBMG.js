@@ -1,9 +1,0 @@
-const e={slug:"calling-a-cards-colour-1",metadata:{id:"puzzle-draft-109",title:"Calling a Card’s Colour 1",published:!1,difficulty:"easy",dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"A deck of 26 red and 26 black cards is shuffled into random order and placed face down. Then the cards are turned up one by one and observed by a guesser. He...",websitePreview:"A deck of 26 red and 26 black cards is shuffled into random order and placed face down. Then the cards are turned up one by one and observed by a guesser. He..."},content:`
-
-
-<p>A deck of 26 red and 26 black cards is shuffled into random order and placed face down. Then the cards are turned up one by one and observed by a guesser. He gets one guess: At a moment of his choice he may assert that the next card will turn up red. After this card is turned up the game ends and he wins if his assertion was correct, loses otherwise. And if he doesn't guess at all by the time all cards have been dealt, he loses by default. What guessing policy chosen in advance maximizes his chance of winning?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
-<!-- Tags: \\[todo\\] -->
-<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/medium.shtml) -->
-
-A deck of 26 red and 26 black cards is shuffled into random order and placed face down. Then the cards are turned up one by one and observed by a guesser. He gets one guess: At a moment of his choice he may assert that the next card will turn up red. After this card is turned up the game ends and he wins if his assertion was correct, loses otherwise. And if he doesn't guess at all by the time all cards have been dealt, he loses by default. What guessing policy chosen in advance maximizes his chance of winning?
-`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

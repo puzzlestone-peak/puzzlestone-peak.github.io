@@ -1,0 +1,43 @@
+const e={slug:"stack-of-coins-1b",metadata:{id:"puzzle-68",title:"Stack of Coins 1B",difficulty:{concepts:"easy",reasoning:"easy"},concepts:["adversarial-game","invariants"],tags:["has-solution"],previousPuzzle:"stack-of-coins-1a",nextPuzzle:"stack-of-coins-1c",dateCreated:"2026-02-06",lastUpdated:"2026-02-06",credit:`Extension of a classic puzzle. Question and solution written by Puzzlestone Peak.
+`,preview:"You and your friend stumble on another pirate’s treasure: 99 copper coins and 1 gold coin. As before, these old coins are no longer legal tender, so the copper...",websitePreview:"You and your friend stumble on another pirate’s treasure: 99 copper coins and 1 gold coin. As before, these old coins are no longer legal tender, so the copper..."},content:`<p>You and your friend stumble on another pirate’s treasure: 99 copper coins and 1 gold coin. As before, these old coins are no longer legal tender, so the copper ones are worthless. Only the gold coin is worth something due to its material.</p>
+<p>To determine who gets the gold coin, your friend comes up with a game of wits. He stacks the 100 coins in a tall stack with the gold coin at the bottom. You and him will take turns taking anywhere between 1 to 10 coins from the top of the stack, all the way until the final coin is taken. He lets you decide if you want to go first or second.</p>
+<p>Should you go first or second? And what strategy do you use to ensure you’ll win the gold coin?</p>
+<details class="content-block hint-block" data-type="hint"><summary class="hint-label">Hint</summary><div class="hint-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p>Try the previous puzzle first and see if you can extend the solution.</p></div></details>
+<details class="content-block solution-block" data-type="solution"><summary class="solution-label">Solution</summary><div class="solution-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p>Choose to go first and take 1 coin. After that, when your friend makes a move, take <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>11</mn><mo>−</mo><mi>x</mi></mrow><annotation>11 - x</annotation></semantics></math></span><span class="katex-html"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">11</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> coins, where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation>x</annotation></semantics></math></span><span class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> is the number of coins he took.</p><div class="content-block note-block note-note" data-type="note" data-note-type="note"><div class="note-header note-note-header">Recapping the solution for Stack of Coins 1A</div><div class="note-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p>The trick to <a href="/puzzle/stack-of-coins-1a">Stack of Coins 1A</a> is to notice that you always want to reduce the stack of coins by 3. 3 coins is the perfect number because:</p><ul>
+<li>Your friend cannot remove 3 coins at once on his turn</li>
+<li>After your friend’s turn (taking 1 or 2 coins), you can always make a move (taking 2 or 1 coins) such that you both reduce the stack by 3 coins.</li>
+</ul><p>This ensures you can always keep the stack at a multiple of 3, until the number of coins reaches 0 (which is also a multiple of 3). But since you will be the last to move for every group of 3 coins, you will be the player to bring the number of coins to 0 (i.e. taking the gold coin).</p><p>After that, all that’s left to do is to ensure the stack of coins is a multiple of 3 whenever it’s your friend’s turn. Since 20 coins isn’t a multiple of 3, but 18 is, you should choose to go first and take 2 coins.</p></div></div><p>Extending the previous solution, we want to find this “magic number” for this version of the game. 3 will no longer cut it, because your friend can take more than 3 coins at once on his turn. Our new number is 11: one more than the maximum number of coins your friend can take on his turn. We can again check that it satisfies our earlier 2 conditions:</p><ul>
+<li>Your friend cannot remove 11 coins at once on his turn</li>
+<li>After your friend’s turn (taking 1 to 10 coins), you can always make a move (taking 10 to 1 coins) such that you both reduce the stack by 11 coins.</li>
+</ul><p>Now, all you have to do is to remove the first coin, to bring the stack down to 99 coins: a multiple of 11. Whenever your friend takes 1 to 10 coins, you can always take <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>11</mn><mo>−</mo><mi>x</mi></mrow><annotation>11 - x</annotation></semantics></math></span><span class="katex-html"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">11</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> coins to bring the stack down to the next lower multiple of 11. This continues until the stack is 11 coins high. He can take between 1 to 10 coins, and you’ll take the remaining coins, including the gold coin.</p></div></details>`,rawContent:`You and your friend stumble on another pirate’s treasure: 99 copper coins and 1 gold coin. As before, these old coins are no longer legal tender, so the copper ones are worthless. Only the gold coin is worth something due to its material.
+
+To determine who gets the gold coin, your friend comes up with a game of wits. He stacks the 100 coins in a tall stack with the gold coin at the bottom. You and him will take turns taking anywhere between 1 to 10 coins from the top of the stack, all the way until the final coin is taken. He lets you decide if you want to go first or second.
+
+Should you go first or second? And what strategy do you use to ensure you’ll win the gold coin?
+
+:::hint
+Try the previous puzzle first and see if you can extend the solution.
+:::
+
+::::solution
+Choose to go first and take 1 coin. After that, when your friend makes a move, take $11 - x$ coins, where $x$ is the number of coins he took.
+
+:::note[Recapping the solution for Stack of Coins 1A]
+
+The trick to [Stack of Coins 1A](puzzle:stack-of-coins-1a) is to notice that you always want to reduce the stack of coins by 3. 3 coins is the perfect number because:
+- Your friend cannot remove 3 coins at once on his turn
+- After your friend’s turn (taking 1 or 2 coins), you can always make a move (taking 2 or 1 coins) such that you both reduce the stack by 3 coins.
+
+This ensures you can always keep the stack at a multiple of 3, until the number of coins reaches 0 (which is also a multiple of 3). But since you will be the last to move for every group of 3 coins, you will be the player to bring the number of coins to 0 (i.e. taking the gold coin).
+
+After that, all that’s left to do is to ensure the stack of coins is a multiple of 3 whenever it’s your friend’s turn. Since 20 coins isn’t a multiple of 3, but 18 is, you should choose to go first and take 2 coins.
+
+:::
+
+Extending the previous solution, we want to find this “magic number” for this version of the game. 3 will no longer cut it, because your friend can take more than 3 coins at once on his turn. Our new number is 11: one more than the maximum number of coins your friend can take on his turn. We can again check that it satisfies our earlier 2 conditions:
+- Your friend cannot remove 11 coins at once on his turn
+- After your friend’s turn (taking 1 to 10 coins), you can always make a move (taking 10 to 1 coins) such that you both reduce the stack by 11 coins.
+
+Now, all you have to do is to remove the first coin, to bring the stack down to 99 coins: a multiple of 11. Whenever your friend takes 1 to 10 coins, you can always take $11 - x$ coins to bring the stack down to the next lower multiple of 11. This continues until the stack is 11 coins high. He can take between 1 to 10 coins, and you’ll take the remaining coins, including the gold coin.
+::::
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

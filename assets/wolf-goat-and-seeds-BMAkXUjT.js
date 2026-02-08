@@ -1,0 +1,9 @@
+const e={slug:"wolf-goat-and-seeds",metadata:{id:"puzzle-draft-49",title:"Wolf, Goat, and Seeds",published:!1,difficulty:{concepts:"easy",reasoning:"easy"},dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"(Classic puzzle) A farmer returning home from the market must get across the river and return home with his three purchases, a wolf, a goat and a bag of seeds....",websitePreview:"(Classic puzzle) A farmer returning home from the market must get across the river and return home with his three purchases, a wolf, a goat and a bag of seeds...."},content:`
+
+
+<p>(Classic puzzle) A farmer returning home from the market must get across the river and return home with his three purchases, a wolf, a goat and a bag of seeds. However, He must take them in his boat. He can't have more than one item with him on his boat at all times. He cannot leave the wolf alone with the goat because the wolf will eat the goat, and he cannot leave the goat alone with the bag of seeds because the goat will eat the bag of seeds. How does he get all three of his purchases back home safely?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
+<!-- Tags: \\[todo\\] -->
+<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/easy.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/easy.shtml) -->
+
+(Classic puzzle) A farmer returning home from the market must get across the river and return home with his three purchases, a wolf, a goat and a bag of seeds. However, He must take them in his boat. He can't have more than one item with him on his boat at all times. He cannot leave the wolf alone with the goat because the wolf will eat the goat, and he cannot leave the goat alone with the bag of seeds because the goat will eat the bag of seeds. How does he get all three of his purchases back home safely?
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};

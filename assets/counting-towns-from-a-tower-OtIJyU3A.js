@@ -1,0 +1,201 @@
+const t={slug:"counting-towns-from-a-tower",metadata:{id:"puzzle-7",title:"Counting Towns from a Tower",difficulty:{concepts:"medium",reasoning:"medium"},concepts:["logic","deductive-reasoning"],tags:["has-solution"],credit:"Puzzle via Smart-Kit.com. Question and solution written by Puzzlestone Peak.",dateCreated:"2025-11-02",lastUpdated:"2025-11-02",changelog:"2025-11-03: Added to Puzzlestone Peak",preview:"The evil king, no longer trusting his 2 wise men, wants to test their wisdom, so he locks them in a tall tower in the middle of his kingdom. One wise man is...",websitePreview:"The evil king, no longer trusting his 2 wise men, wants to test their wisdom, so he locks them in a tall tower in the middle of his kingdom. One wise man is..."},content:`<p>The evil king, no longer trusting his 2 wise men, wants to test their wisdom, so he locks them in a tall tower in the middle of his kingdom. One wise man is put into a cell facing the north, while the other is put in a cell facing the south. Through a tiny window in each of their cells, they could collectively see all the towns in the kingdom with no overlap.</p>
+<p>The king briefs each wise man with what he was going to do. Every evening, he would come to their cells. If either of the wise men knew the total number of towns in the kingdom, they would be freed that very evening. But if either of them gave a wrong answer, they would be put to death. For a final clue, the king tells them that there were either 10 or 13 towns in his kingdom.</p>
+<p>There were no guesses on the first, second, third, and fourth days. However, on the evening of the fifth day, they were freed. How? And how many towns are there in the kingdom?</p>
+<details class="content-block hint-block" data-type="hint"><summary class="hint-label">Hint</summary><div class="hint-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p>There are no tricks involved—no secret communication by tapping on the walls of the tower, etc. Everything is done through pure logic.</p></div></details>
+<details class="content-block solution-block" data-type="solution"><summary class="solution-label">Solution</summary><div class="solution-content markdown-content prose max-w-none px-4 py-4 space-y-4"><p>There are 13 towns in the kingdom.</p><p>To understand the logic used to solve this, let’s start with a concrete example. Let’s say you’re one of the wise men, and through your window you see 2 towns. Since the total number of towns is either 10 or 13, you know the other wise man sees either 8 or 11 towns. However, if the other wise man sees 11 towns, he’d immediately know that there must be 13 towns in total, and you’d both be free by the evening of the first day. If it’s day 2, and you’re both not yet free, then you know he must not be seeing 11 towns, and so you can conclude that he must be seeing 8 towns, and there are 10 towns in total. The lack of response from the other wise man is information that you could use.</p><p>Now let’s step back and examine all the scenarios that the wise men could encounter, as well as the way the towns are split between them:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="no-header"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>10 towns:</td><td>0+10</td><td>1+9</td><td>2+8</td><td>3+7</td><td>4+6</td><td>5+5</td><td></td></tr><tr><td>13 towns:</td><td>0+13</td><td>1+12</td><td>2+11</td><td>3+10</td><td>4+9</td><td>5+8</td><td>6+7</td></tr></tbody></table><p>As with the earlier logic, if either of the wise men saw 11 towns through their window, it’d immediately be obvious that the total number of towns must be 13. In fact, we can extend the same logic to seeing 12 and 13 towns too. After the first day, if the wise men are not freed, they can both conclude that they are not in the scenario where there are 13 towns in the following splits: 0+13, 1+12, or 2+11.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="no-header"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>10 towns:</td><td>0+10</td><td>1+9</td><td>2+8</td><td>3+7</td><td>4+6</td><td>5+5</td><td></td></tr><tr><td>13 towns:</td><td><del>0+13</del></td><td><del>1+12</del></td><td><del>2+11</del></td><td>3+10</td><td>4+9</td><td>5+8</td><td>6+7</td></tr></tbody></table><p>Now we see that if any of the wise men saw 0, 1, or 2 towns, then they’d know by day 2 that they were in the scenario with 10 towns.</p><p>What happens then if they’re not freed by day 2? Then it’s impossible that any of the wise men saw 0, 1, or 2 towns through their window. This means we can eliminate the scenarios with 10 towns in the following splits: 0+10, 1+9, 2+8</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="no-header"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>10 towns:</td><td><del>0+10</del></td><td><del>1+9</del></td><td><del>2+8</del></td><td>3+7</td><td>4+6</td><td>5+5</td><td></td></tr><tr><td>13 towns:</td><td><del>0+13</del></td><td><del>1+12</del></td><td><del>2+11</del></td><td>3+10</td><td>4+9</td><td>5+8</td><td>6+7</td></tr></tbody></table><p>We continue the logic. On day 3, if any of the wise men saw 8, 9, or 10 towns through their window, they’d now know that they can’t be in the 2+8, 1+9, or 0+10 scenarios. Meaning that they must be in the 3+10, 4+9, or 5+8 scenarios with 13 towns, and they can report it on the evening of the 3rd day. But if the 4th day arrives and both wise men have not been freed, then we can eliminate those scenarios too.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="no-header"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>10 towns:</td><td><del>0+10</del></td><td><del>1+9</del></td><td><del>2+8</del></td><td>3+7</td><td>4+6</td><td>5+5</td><td></td></tr><tr><td>13 towns:</td><td><del>0+13</del></td><td><del>1+12</del></td><td><del>2+11</del></td><td><del>3+10</del></td><td><del>4+9</del></td><td><del>5+8</del></td><td>6+7</td></tr></tbody></table><p>You know the drill. On day 4, if any of the wise men saw 3, 4, or 5 towns through their window, then they know that there are 10 towns in total, and they’d be freed that evening. But if they found themselves still in their cells on day 5, then we know that this cannot be the case.</p><p>|||||||||
+|10 towns:|<del>0+10</del>|<del>1+9</del>|<del>2+8</del>|<del>3+7</del>|<del>4+6</del>|<del>5+5</del>||
+|13 towns:|<del>0+13</del>|<del>1+12</del>|<del>2+11</del>|<del>3+10</del>|<del>4+9</del>|<del>5+8</del>|6+7|</p><p>It’s day 5, and now the only scenario that remains is that there are 13 towns in total, with one wise man seeing 6 towns and the other seeing 7 towns. That evening, the answer is given, and they’re both freed.</p></div></details>`,rawContent:`
+The evil king, no longer trusting his 2 wise men, wants to test their wisdom, so he locks them in a tall tower in the middle of his kingdom. One wise man is put into a cell facing the north, while the other is put in a cell facing the south. Through a tiny window in each of their cells, they could collectively see all the towns in the kingdom with no overlap.
+
+The king briefs each wise man with what he was going to do. Every evening, he would come to their cells. If either of the wise men knew the total number of towns in the kingdom, they would be freed that very evening. But if either of them gave a wrong answer, they would be put to death. For a final clue, the king tells them that there were either 10 or 13 towns in his kingdom.
+
+There were no guesses on the first, second, third, and fourth days. However, on the evening of the fifth day, they were freed. How? And how many towns are there in the kingdom?
+
+:::hint
+There are no tricks involved—no secret communication by tapping on the walls of the tower, etc. Everything is done through pure logic.
+:::
+
+:::solution
+There are 13 towns in the kingdom.
+
+To understand the logic used to solve this, let’s start with a concrete example. Let’s say you’re one of the wise men, and through your window you see 2 towns. Since the total number of towns is either 10 or 13, you know the other wise man sees either 8 or 11 towns. However, if the other wise man sees 11 towns, he’d immediately know that there must be 13 towns in total, and you’d both be free by the evening of the first day. If it’s day 2, and you’re both not yet free, then you know he must not be seeing 11 towns, and so you can conclude that he must be seeing 8 towns, and there are 10 towns in total. The lack of response from the other wise man is information that you could use.
+
+Now let’s step back and examine all the scenarios that the wise men could encounter, as well as the way the towns are split between them:
+
+|||||||||
+|-|-|-|-|-|-|-|-|
+|10 towns:|0+10|1+9|2+8|3+7|4+6|5+5||
+|13 towns:|0+13|1+12|2+11|3+10|4+9|5+8|6+7|
+
+As with the earlier logic, if either of the wise men saw 11 towns through their window, it’d immediately be obvious that the total number of towns must be 13. In fact, we can extend the same logic to seeing 12 and 13 towns too. After the first day, if the wise men are not freed, they can both conclude that they are not in the scenario where there are 13 towns in the following splits: 0+13, 1+12, or 2+11.
+
+|||||||||
+|-|-|-|-|-|-|-|-|
+|10 towns:|0+10|1+9|2+8|3+7|4+6|5+5||
+|13 towns:|~0+13~|~1+12~|~2+11~|3+10|4+9|5+8|6+7|
+
+Now we see that if any of the wise men saw 0, 1, or 2 towns, then they’d know by day 2 that they were in the scenario with 10 towns.
+
+What happens then if they’re not freed by day 2? Then it’s impossible that any of the wise men saw 0, 1, or 2 towns through their window. This means we can eliminate the scenarios with 10 towns in the following splits: 0+10, 1+9, 2+8
+
+|||||||||
+|-|-|-|-|-|-|-|-|
+|10 towns:|~0+10~|~1+9~|~2+8~|3+7|4+6|5+5||
+|13 towns:|~0+13~|~1+12~|~2+11~|3+10|4+9|5+8|6+7|
+
+We continue the logic. On day 3, if any of the wise men saw 8, 9, or 10 towns through their window, they’d now know that they can’t be in the 2+8, 1+9, or 0+10 scenarios. Meaning that they must be in the 3+10, 4+9, or 5+8 scenarios with 13 towns, and they can report it on the evening of the 3rd day. But if the 4th day arrives and both wise men have not been freed, then we can eliminate those scenarios too.
+
+|||||||||
+|-|-|-|-|-|-|-|-|
+|10 towns:|~0+10~|~1+9~|~2+8~|3+7|4+6|5+5||
+|13 towns:|~0+13~|~1+12~|~2+11~|~3+10~|~4+9~|~5+8~|6+7|
+
+You know the drill. On day 4, if any of the wise men saw 3, 4, or 5 towns through their window, then they know that there are 10 towns in total, and they’d be freed that evening. But if they found themselves still in their cells on day 5, then we know that this cannot be the case.
+
+|||||||||
+|10 towns:|~0+10~|~1+9~|~2+8~|~3+7~|~4+6~|~5+5~||
+|13 towns:|~0+13~|~1+12~|~2+11~|~3+10~|~4+9~|~5+8~|6+7|
+
+It’s day 5, and now the only scenario that remains is that there are 13 towns in total, with one wise man seeing 6 towns and the other seeing 7 towns. That evening, the answer is given, and they’re both freed.
+:::
+`,dynamicBlocks:[],inlineComponents:{}};export{t as default};

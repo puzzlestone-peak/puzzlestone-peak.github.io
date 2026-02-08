@@ -1,7 +1,0 @@
-const t={slug:"black-and-white-balls-in-a-tube",metadata:{id:"puzzle-draft-323",title:"Black and White Balls in A Tube",published:!1,difficulty:"medium",dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:"We’re playing a game. There’s a vertical transparent tube of black and white balls. We take a ball out of the bottom. If it’s black, I get to pick what colour...",websitePreview:"We’re playing a game. There’s a vertical transparent tube of black and white balls. We take a ball out of the bottom. If it’s black, I get to pick what colour..."},content:`
-
-<p>We’re playing a game. There’s a vertical transparent tube of black and white balls. We take a ball out of the bottom. If it’s black, I get to pick what colour ball goes into the top of the tube. If it’s white, you get to pick what colour ball goes into the top of the tube. Your goal is to replace all the balls in the tube with black balls, my goal is to keep you playing forever. Who wins?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
-<!-- Tags: \\[todo\\] -->
-
-We’re playing a game. There’s a vertical transparent tube of black and white balls. We take a ball out of the bottom. If it’s black, I get to pick what colour ball goes into the top of the tube. If it’s white, you get to pick what colour ball goes into the top of the tube. Your goal is to replace all the balls in the tube with black balls, my goal is to keep you playing forever. Who wins?
-`,dynamicBlocks:[],inlineComponents:{}};export{t as default};

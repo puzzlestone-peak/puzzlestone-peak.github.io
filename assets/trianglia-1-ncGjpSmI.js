@@ -1,0 +1,9 @@
+const e={slug:"trianglia-1",metadata:{id:"puzzle-draft-151",title:"Trianglia 1",published:!1,difficulty:{concepts:"medium",reasoning:"medium"},dateCreated:"[PLACEHOLDER]",lastUpdated:"[PLACEHOLDER]",concepts:[],preview:'Trianglia is a jacked-up island where no road has a dead end, and all the crossroads are "Y" shaped. The young prince of Trianglia mounts his horse, and is...',websitePreview:'Trianglia is a jacked-up island where no road has a dead end, and all the crossroads are "Y" shaped. The young prince of Trianglia mounts his horse, and is...'},content:`
+
+
+<p>Trianglia is a jacked-up island where no road has a dead end, and all the crossroads are "Y" shaped. The young prince of Trianglia mounts his horse, and is about to go on a quest to explore the land of Trianglia. He gets to the road by his palace, when the mother queen comes out and shouts: "But Charles, how will you find your way back?". "Don't worry Elizabeth", the prince replies, "I will turn right in every second crossroad to which I arrive, and left otherwise. Thus I shall surely return to the palace sooner or later." Is the prince right?</p>`,rawContent:`<!-- Difficulty: \\[todo\\] -->
+<!-- Tags: \\[todo\\] -->
+<!-- Source: [https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml](https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml) -->
+
+Trianglia is a jacked-up island where no road has a dead end, and all the crossroads are "Y" shaped. The young prince of Trianglia mounts his horse, and is about to go on a quest to explore the land of Trianglia. He gets to the road by his palace, when the mother queen comes out and shouts: "But Charles, how will you find your way back?". "Don't worry Elizabeth", the prince replies, "I will turn right in every second crossroad to which I arrive, and left otherwise. Thus I shall surely return to the palace sooner or later." Is the prince right?
+`,dynamicBlocks:[],inlineComponents:{}};export{e as default};
